@@ -183,7 +183,7 @@ class SocialMediaHandling {
                 borderRadius: BorderRadius.circular(10),
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.grey.withOpacity(0.3),
+                    color: Colors.grey.withValues(alpha: 0.3),
                     blurRadius: 4.0,
                     spreadRadius: 0.0,
                     offset: const Offset(0.0, 2.0,),
@@ -200,8 +200,8 @@ class SocialMediaHandling {
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
                         color: isError
-                            ? Colors.red.withOpacity(0.2)
-                            : Colors.green.withOpacity(0.2),
+                            ? Colors.red.withValues(alpha: 0.2)
+                            : Colors.green.withValues(alpha: 0.2),
                       ),
                       child: Icon(
                         isError ? Icons.error : Icons.done_all,
