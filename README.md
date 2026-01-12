@@ -1,17 +1,17 @@
-# social_media_handling
+# Social Media Handling
 
-A Flutter utility package to handle social media links, calls, WhatsApp, navigation, and websites.
+A Flutter utility package to open social media apps, websites, WhatsApp, phone calls, and Google Maps navigation.
 
-## Getting Started
+## Features
+- Open Facebook & Instagram profiles
+- Launch WhatsApp chats
+- Make phone calls
+- Open websites
+- Navigate using Google Maps
+- Check internet connectivity
 
-This project is a starting point for a Flutter application.
+## Installation
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# social_media_handling
+```yaml
+dependencies:
+  social_media_handling: ^1.0.0
