@@ -1,6 +1,7 @@
 import 'package:bot_toast/bot_toast.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:flutter/material.dart';
+import 'package:share_plus/share_plus.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 
@@ -228,6 +229,37 @@ class SocialMediaHandling {
           ),
         ));
   }
+
+
+
+  static Future<void> sendEmail({
+    required String toEmail,
+    required String subject,
+    required String body,
+  }) async {
+    final String encodedSubject = Uri.encodeComponent(subject);
+    final String encodedBody = Uri.encodeComponent(body);
+
+    final Uri emailUri = Uri.parse(
+      'mailto:$toEmail?subject=$encodedSubject&body=$encodedBody',
+    );
+
+    if (!await launchUrl(
+      emailUri,
+      mode: LaunchMode.externalApplication,
+    )) {
+      throw Exception('Could not launch email app');
+    }
+  }
+
+
+
+  static void shareMyApp({required String title, required String subject}){
+    Share.share(
+      title,
+      subject: subject,
+    );
+  }
 }
 
 
@@ -242,3 +274,4 @@ SizedBox xWidth(double width) {
     width: width,
   );
 }
+
