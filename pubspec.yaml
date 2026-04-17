@@ -3,6 +3,9 @@ description: A Flutter utility package to handle social media links, calls, What
 version: 1.0.1
 homepage: https://github.com/mrLorick/social_media_handling
 
+
+#flutter pub publish --dry-run
+
 environment:
   sdk: ">=3.0.0 <4.0.0"
   flutter: ">=3.10.0"
